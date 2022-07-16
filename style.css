@@ -1,0 +1,107 @@
+body{
+	background-image: url("images/t3.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	animation: magic 40s ease-in-out infinite;
+}
+
+/*this was for the background*/
+
+/*now lets style paddle*/
+
+#paddle-1{
+	position: absolute;
+	left: 0px;
+	top:450px;
+	width: 20px;
+	height:150px;
+	background-color:red; 
+	border-radius:50%;
+}
+
+
+#paddle-2{
+	position: absolute;
+	right: 0px;
+	top:450px;
+	width: 20px;
+	height:150px;
+	background-color:#51f7f7f2; 
+	border-radius:50%;
+}
+
+/*css for ball*/
+#ball{
+	position: absolute;
+	left:670px;
+	top:300px;
+	width: 25px;
+	height: 25px;
+    box-shadow: -5px -5px 30px 5px #1fd671, 5px 5px 30px 5px red;
+	border-radius: 50%;
+	background-color: white;
+	animation: changecolor 1s ease-in-out infinite;
+}
+
+#score-div{
+	display: flex;
+	justify-content: space-around;
+	color: red;
+	font-size: 100px;
+
+}
+
+@keyframes changecolor{
+
+	0%{
+        background-color: white;
+        border-radius: 40%;
+	}
+
+	20%{
+           background-color: red;
+           border-radius: 50%;
+
+	}
+	40%{
+         background-color: #d65b13;
+         border-radius: 40%;
+	}
+     60%{
+
+          background-color: #dc1455;
+          border-radius: 50%;
+     }
+     80%{
+         background-color: #9cdcb9;
+         border-radius: 30%;
+     }
+     100%{
+background-color: red;
+border-radius: 50%;
+     }
+
+
+
+	}
+
+	@keyframes magic{
+		0%{
+           background-image: url("images/jai4.jpg");
+		}
+		20%{
+           background-image: url("images/jai2.jpg");
+		}
+		40%{
+           background-image: url("images/jai1.jpg");
+		}
+		60%{
+           background-image: url("images/jai4.jpg");
+		}
+		80%{
+           background-image: url("images/jai2.jpg");
+		}
+		100%{
+           background-image: url("images/jai1.jpg");
+		}
+	}
